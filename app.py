@@ -2,6 +2,8 @@ from flask import Flask, render_template, request
 import pandas as pd
 import pickle
 import numpy as np
+from urllib.parse import quote  # Importing quote from urllib.parse
+
 app= Flask(__name__)
 car = pd.read_csv("Cleaned Car.csv")
 
